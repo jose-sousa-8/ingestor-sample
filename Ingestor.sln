@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{758B7D92-A76F-47D6-AB41-5C276022A4BB}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+		Makefile = Makefile
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{49AFA993-D66C-42E3-843A-E69A1910AE2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StorageService", "src\StorageService\StorageService.csproj", "{99C0A8C5-4E57-48CD-8F91-47D7316EB371}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PixelService", "src\PixelService\PixelService.csproj", "{BFFBE58A-889D-4AD5-9D04-2383E4B8EFCA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{62432EB1-5BB8-4FFC-B4A1-923A9F7D88E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "unit", "unit", "{DCF35D0E-EAC3-4335-8E86-F1D56DFA0EA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackingContracts", "src\TrackingContracts\TrackingContracts.csproj", "{CBAD8596-F8FF-478D-9D9C-80A221060773}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PixelServiceTests", "tests\unit\PixelServiceTests\PixelServiceTests.csproj", "{FB3A863C-7DEC-4DD8-93A1-AA8F4EF5841A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StorageServiceTests", "tests\unit\StorageServiceTests\StorageServiceTests.csproj", "{39DA4FAE-DCAF-45F0-B67E-8A73FB2D0674}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99C0A8C5-4E57-48CD-8F91-47D7316EB371}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99C0A8C5-4E57-48CD-8F91-47D7316EB371}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99C0A8C5-4E57-48CD-8F91-47D7316EB371}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99C0A8C5-4E57-48CD-8F91-47D7316EB371}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFFBE58A-889D-4AD5-9D04-2383E4B8EFCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFFBE58A-889D-4AD5-9D04-2383E4B8EFCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFFBE58A-889D-4AD5-9D04-2383E4B8EFCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFFBE58A-889D-4AD5-9D04-2383E4B8EFCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBAD8596-F8FF-478D-9D9C-80A221060773}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBAD8596-F8FF-478D-9D9C-80A221060773}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBAD8596-F8FF-478D-9D9C-80A221060773}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBAD8596-F8FF-478D-9D9C-80A221060773}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB3A863C-7DEC-4DD8-93A1-AA8F4EF5841A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB3A863C-7DEC-4DD8-93A1-AA8F4EF5841A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB3A863C-7DEC-4DD8-93A1-AA8F4EF5841A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB3A863C-7DEC-4DD8-93A1-AA8F4EF5841A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39DA4FAE-DCAF-45F0-B67E-8A73FB2D0674}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39DA4FAE-DCAF-45F0-B67E-8A73FB2D0674}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39DA4FAE-DCAF-45F0-B67E-8A73FB2D0674}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39DA4FAE-DCAF-45F0-B67E-8A73FB2D0674}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{99C0A8C5-4E57-48CD-8F91-47D7316EB371} = {49AFA993-D66C-42E3-843A-E69A1910AE2C}
+		{BFFBE58A-889D-4AD5-9D04-2383E4B8EFCA} = {49AFA993-D66C-42E3-843A-E69A1910AE2C}
+		{DCF35D0E-EAC3-4335-8E86-F1D56DFA0EA4} = {62432EB1-5BB8-4FFC-B4A1-923A9F7D88E0}
+		{CBAD8596-F8FF-478D-9D9C-80A221060773} = {49AFA993-D66C-42E3-843A-E69A1910AE2C}
+		{FB3A863C-7DEC-4DD8-93A1-AA8F4EF5841A} = {DCF35D0E-EAC3-4335-8E86-F1D56DFA0EA4}
+		{39DA4FAE-DCAF-45F0-B67E-8A73FB2D0674} = {DCF35D0E-EAC3-4335-8E86-F1D56DFA0EA4}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <AssemblyName>PixelService</AssemblyName>
+        <RootNamespace>PixelService</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="KafkaFlow" Version="3.0.3" />
+        <PackageReference Include="KafkaFlow.Microsoft.DependencyInjection" Version="3.0.3" />
+        <PackageReference Include="KafkaFlow.Serializer.NewtonsoftJson" Version="3.0.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="..\.dockerignore">
+        <Link>.dockerignore</Link>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\TrackingContracts\TrackingContracts.csproj" />
+    </ItemGroup>
+
+</Project>
